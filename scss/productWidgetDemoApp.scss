@@ -1,0 +1,93 @@
+$icon-link-color: #498700;
+$bg-color-from: #EAEAD0;
+$bg-color-to: #C7C7A5;
+
+.product-widget {
+  margin: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, .15);
+
+  .product-title,
+  .content-footer {
+    padding: 12px 10px;
+  }
+
+  .product-title {
+    position: relative;
+    background-image: linear-gradient(to right, $bg-color-from, $bg-color-to);
+
+    h1 {
+      display: inline-block;
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .widget-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+
+    .material-icons {
+      font-size: 20px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navigate-link {
+    &.prev {
+      float: left;
+    }
+
+    &.next {
+      float: right;
+    }
+  }
+
+  .content-footer {
+    border-top: 1px solid $bg-color-to;
+  }
+}
+
+.content-item {
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .description {
+    margin: 10px 2px;
+    font-size: 13px;
+    white-space: pre-wrap;
+  }
+}
+
+.navigate-link .material-icons {
+  font-size: 28px;
+}
+
+.material-icons {
+  position: relative;
+  top: -.05em;
+  color: $icon-link-color;
+  vertical-align: middle;
+}
+
+a {
+  font-size: 14px;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $icon-link-color;
+  }
+}

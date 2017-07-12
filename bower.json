@@ -1,0 +1,9 @@
+{
+  "name": "product-widget",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.6.5",
+    "angular-resource": "1.6.5",
+    "angular-ui-router": "1.0.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "product-widget",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BananaP0wer/product-widget.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "build": "bower install && grunt dist",
+    "watch": "npm run build && grunt watch"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-config": "^0.19.2"
+  },
+  "dependencies": {
+    "bundle": "^0.2.3"
+  }
+}
